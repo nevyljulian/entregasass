@@ -1,0 +1,121 @@
+@media (min-width: 481px) and (max-width:1023px){
+    /* INDEX  */
+       /* AREAS MAIN  */
+   #gridMainIndex{
+       display: grid;
+       grid-template-areas: 
+       "fotoDestacada mapaBuscador"
+       "buscador buscador"
+       "videos videos"
+       ;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 300px 400px 500px;;
+   }
+   .fotoDestacada{
+   grid-area: fotoDestacada;
+   font-weight:bold;
+   background-color: rgba(230, 105, 48, 0.863) ;
+   color: whitesmoke;
+   font-size: large;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 1mm;
+   padding: 10px;
+   }
+   .mapaBuscador{
+       grid-area: mapaBuscador;
+       display: grid;
+       align-items: flex-end;
+   }
+   .buscador{
+       grid-area: buscador;
+       text-align: center;
+       text-transform: uppercase;
+       border: double 5px orange;
+       border-radius: 10px;
+       background-color: RGBA(192, 192, 50, 0.5);
+       font-size: 15px;
+       margin: 30px;
+       padding: 10px;
+       display: flex;
+       flex-direction: column;
+       height: 300px;
+   }
+   .videos{
+       grid-area: videos;
+   }
+           /*CLASES EXTRAS MAIN*/
+   .propiedadDestacada{
+       margin: 10px;
+       width: 250px;
+       height: 180px;
+   }
+   .tituloDos{
+       font-weight:bold;
+       background-color: rgba(167, 160, 142, 0.863) ;
+       color: whitesmoke;
+       font-size: small;
+       text-align: center;
+       text-transform: uppercase;
+       letter-spacing: 1mm;
+       padding: 10px;
+       height: 50px;
+   }
+   .mapa{
+   width: 100%;
+   height: 250px;
+   }
+   .casillasBuscador{
+       border: 2px solid rgb(156, 152, 152);
+       border-radius: 5px;;
+       font-size: 11px;
+       background-color: rgba(201, 203, 84, 0.5);
+       text-transform: uppercase;
+       margin: 10px;
+   }
+   .botonBuscar{
+       padding: 5px 25px 5px 25px;
+       margin: 5px;
+       border: groove 3px rgb(88, 89, 92);
+       font-size: 15px;
+       font-family:monospace;
+       background: orange;
+       color: black;
+       letter-spacing: 0.3mm;
+       text-transform: uppercase;
+   }
+   .animacion{
+       animation-name: animacion;
+       animation-iteration-count: infinite;
+       animation-duration: 2s;
+       }
+       @keyframes animacion{
+           from {transform: translate (-200px);
+               opacity: 0 ;
+           }
+           to {transform: translateY (0) ;
+               opacity: 1;
+           }
+           }
+       
+   .tituloVideos{
+       margin: 10px 140px 10px 140px;
+       text-align: center;
+       text-transform: uppercase;
+       font-weight: bolder;
+       font-family:initial;
+       color: RGBA(0, 79, 54, 0.5);
+       letter-spacing: 0.5mm;
+   }
+   .visualVideos{ 
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+       justify-items: center;
+   }
+   .videosInternos{
+       margin: 20px;
+       height: 150px;
+       width: 150px;
+   }
+   }

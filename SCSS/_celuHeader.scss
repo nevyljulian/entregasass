@@ -1,0 +1,53 @@
+@media (max-width: 480px){
+    /* INDEX  */
+    #gridHeader{
+       display: grid;
+       grid-template-areas: 
+       "logoPrincipal logosalaDerecha"
+       "navegador navegador"
+       "fotoPortada fotoPortada"
+       ;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: 110px 130px 300px;
+        /* AREAS */
+   }
+   .logoPincipal{
+   grid-area:logoPrincipal;
+   }
+   .logosalaDerecha{
+       grid-area: logosalaDerecha;
+       display: flex;
+       justify-content: end;
+       margin: 10px;
+   }
+   .navegador{
+       grid-area: navegador;
+       background-color: rgba(219, 170, 45, 0.863) ;
+   }
+   .fotoPortada{
+       grid-area: fotoPortada;
+       background-image:url("https://images.homify.com/c_fill,f_auto,h_500,q_auto,w_1280/v1571167542/p/photo/image/3230945/06_RECAMRA_FINAL.jpg");
+       background-repeat:no-repeat;
+       background-size:100% 100%;
+   }
+        /*  CLASES EXTRAS HEADER */
+   .logosheader{
+       margin-left: 15px;
+       height: 30px;
+       width: 30px;
+   }
+   body header nav ul li{
+       margin: 4px;
+   }
+   .navegadorBoton{
+       display: flex;
+       flex-direction: column;
+       color: whitesmoke;
+       font-weight:700;
+       font-size: small;
+       padding: 5px;
+       text-align: center;
+       text-transform: uppercase;
+       letter-spacing: 0.8mm;    
+   }
+}

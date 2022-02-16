@@ -1,0 +1,52 @@
+@media (min-width: 1024px){
+    /*/////////////////////////////////MAIN AGENTES///////////////////////
+    ////////////////////////////////////////////////////////*/
+    .gradienteFondo{
+       background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
+    }
+    
+    .subTituloAgenteUno{
+       color: rgb(119, 115, 115);
+       font-size: 20px;
+       font-family: serif;
+       letter-spacing: 1mm;
+       padding: 10px;
+       margin-left: 10%;
+    }
+    
+    .textoSubAgenteUno{
+       color: rgb(48, 47, 47);
+       font-size: 15px;
+       font-family: serif;
+       padding: 20px;
+       letter-spacing: 1mm;
+       font-weight:lighter;
+       margin: 20px;
+    }
+    
+    .fotoAgente{
+       margin: 10px;
+       width: 400px;
+    }
+    
+    .subTituloAgenteDos{
+       text-align: center;
+       color: rgb(119, 115, 115);
+       font-size: 20px;
+       font-family: serif;
+       letter-spacing: 1mm;
+       padding: 10px;
+    }
+    .textoSubAgenteDos{
+       text-align: left;
+       color: rgb(48, 47, 47);
+       font-size: 15px;
+       font-family: serif;
+       letter-spacing: 1mm;
+       font-weight:lighter;
+    }
+    .ubicacion{
+       display: flex;
+       margin-bottom: 50px;
+    }
+}
